@@ -1,0 +1,85 @@
+body {
+    background-color: #ebebeb;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background: #2E3B7A;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 25px 80px;
+    margin: 0 auto;
+    box-shadow: 0 6px rgb(23, 31, 73);
+    border-radius: 20px;
+}
+
+.btn:hover {
+    box-shadow: 0 4px rgb(23, 31, 73);
+    top: 2px;
+    /* transform: scale(1.5); */
+}
+
+.btn:active {
+    box-shadow: 0 0 rgb(23, 31, 73);
+    top: 6px;
+}
+
+.transformed {
+    transform: translateX(20px);
+}
+
+.btn-scale {
+    transform: scale(1.5);
+}
+
+.btn-ls-scale {
+    transform: scale(1.5);
+    transform-origin: left;
+}
+
+.btn-mirror {
+    transform: rotate(180deg);
+}
+
+.btn-translate-rotate {
+    /* transform: rotate(180deg); */
+    transform: rotate(45deg) translateX(180px);
+}
+
+.btn-trans {
+    transition-duration: 4s, 1s;
+    transition-property: background-color, color;
+}
+
+.btn-trans:hover {
+    background-color: silver;
+    color: black;
+    transform: scale(2);
+}
+
+.btn-animation {
+    /* transition-duration: 4s;
+    transition-property: transform;
+    transition-delay: 1s; */
+    transition: transform 2s ease-out 1s, background-color 0.5s linear;
+}
+
+.btn-animation:hover {
+    background-color: silver;
+    color: black;
+    transform: translateX(300px);
+}
